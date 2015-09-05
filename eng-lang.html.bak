@@ -80,8 +80,15 @@
       });
 
       $(function() {
-        $( "#tabs" ).tabs();
+        $("#tabs").tabs({
+          active: 0})
+      });
+
+      $(function() {
         $( "#letter-tabs" ).tabs();
+      });
+
+      $(function() {
         $( "#essay-tabs" ).tabs();
       });
 
@@ -128,17 +135,17 @@
         <div id="letter">
           <div id="letter-tabs">
             <ul>
-              <li><a href="#letter-tab-0"></a></li>
               <li><a href="#letter-tab-1">Format</a></li>
-              <li><a href="#letter-tab-2">Informal </a></li>
-              <li><a href="#letter-tab-3">Narrative</a></li>
-              <li><a href="#letter-tab-4">Descriptive </a></li>
-              <li><a href="#letter-tab-5">Thanking </a></li>
-              <li><a href="#letter-tab-6">Congratulating </a></li>
-              <li><a href="#letter-tab-7">Sympathy </a></li>
-              <li><a href="#letter-tab-8">Apology </a></li>
-              <li><a href="#letter-tab-9">Match</a></li>
+              <li><a href="#letter-tab-2">Informal Letter</a></li>
+              <li><a href="#letter-tab-3">Narrate incident</a></li>
+              <li><a href="#letter-tab-4">Descriptive Letter</a></li>
+              <li><a href="#letter-tab-5">Thanking Letter</a></li>
+              <li><a href="#letter-tab-6">Congratulating Letter</a></li>
+              <li><a href="#letter-tab-7">Sympathy Letter</a></li>
+              <li><a href="#letter-tab-8">Apology Letter</a></li>
+              <li><a href="#letter-tab-9">Match the following</a></li>
             </ul>
+
             <div id="letter-tab-1">
               <form>
                 <textarea cols="20" rows="5" placeholder="address"></textarea></br></br>
