@@ -6,19 +6,19 @@
 
 #### A) Simple, compound and complex sentences
 
-   Simple:
+   **Simple:**
    
    a. He runs.  
    b. She plays the piano.  
    c. We are late.  
 
-   Compound:
+   **Compound:**
    
    a. He runs *and* I swim.  
    b. Luke mowed the lawn and he earned ten dollars.  
    c. Thelma and Brenda buy and sell automobiles.  
 
-   Complex:
+   **Complex:**
    
    a. He runs whne I go swimming.  
    b. She was a good player *yet* she was not selected.  
