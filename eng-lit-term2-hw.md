@@ -13,9 +13,10 @@ Meaningful sentences with words listed below:
 
 2. slingshot: 
 
+## Question and Answers
 pg 9
 
-__My mother was in charge of three rondavels at 
+_My mother was in charge of three rondavels at 
 Qunu which, as I remember, were always filled
 with the children of my relations. In fact, I 
 can hardly remember any occasion as a child 
@@ -23,7 +24,7 @@ when I was alone. In African culture, the sons
 and daughters of one's aunts and uncles are
 considered brothers and sisters, not cousins.
 My mother's sister is my mother and my brother's
-child is my son or my daughter.__
+child is my son or my daughter._
 
 1. What was the author's mother responsible for?
 > A. Nelson Mandela's mother was responsible for taking care of 3 houses and families. She was responsible for household chores, taking care of children and their needs.
@@ -39,7 +40,7 @@ child is my son or my daughter.__
 
 pg 10
 
-__It was in the field that...in its various techniques.__
+/It was in the field that...in its various techniques./
 
 1. What did the author learn in his childhood?
 > A. Nelson Mandela lived in a village with near by fields. He learnt how to gather wild honey, fruits and edible roots. He learnt how to dring milk directly from udder of a cow. He also learnt how to catch fish and knock birds using slingshot.
