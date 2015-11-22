@@ -1,4 +1,4 @@
-#Grade 6 - English Literature
+#Grade 6 - English Language
 
 ## Unit 2: Conjunctions
 
