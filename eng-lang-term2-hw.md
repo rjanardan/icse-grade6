@@ -1,6 +1,6 @@
 #Grade 6 - English Literature
 
-## Unit 4 Conjunctions
+## Unit 2: Conjunctions
 
 ### Theory and Examples
 
@@ -24,12 +24,15 @@
 #### B) Simple and Conjunctions in pairs
 
 #### C) Cordinating and Subordinating conjunctions
-    a. Examples of coordinating conjunctions
-        i. The artist sketched the picture _and_ painted it.
-        ii. The lady searched the cupboard _but_ could not find her book.
+a. Examples of coordinating conjunctions
+   i. The artist sketched the picture _and_ painted it.
+  ii. The lady searched the cupboard _but_ could not find her book.
 
-    b. Examples of subordinating conjunctions
-        i. He said _that_ he was happy.
-        ii. Instructions are given _before_ the examination begins.
-        
+b. Examples of subordinating conjunctions
+   i. He said _that_ he was happy.
+  ii. Instructions are given _before_ the examination begins.
+
+Subordinating Words:
+    before, since, till, because, as, that, lest, that, if, unless, though, although, than
+    
 ## Unit 3: Interjections
