@@ -28,7 +28,7 @@ a. Examples of coordinating conjunctions
    i. The artist sketched the picture _and_ painted it.  
   ii. The lady searched the cupboard _but_ could not find her book.  
 
-Coordinating words:  
+**Coordinating words:**__
   and, but, for, still,  
   only, either..or, neither..nor
   
@@ -36,9 +36,34 @@ b. Examples of subordinating conjunctions
    i. He said _that_ he was happy.  
   ii. Instructions are given _before_ the examination begins.  
 
-Subordinating Words:  
+**Subordinating Words:**  
   before, since, till, because,  
   as, that, lest, that, if,  
   unless, though, although, than  
     
 ## Unit 3: Interjections
+
+**Joy**
+
+Wow! What a car!
+
+Hurray! We won the match!
+
+**Grief**
+
+Alas! We could have won the match!
+
+Oh dear! Why are you not eating?
+
+**Disgust**
+
+Yuck! What a bad odour!
+
+Yikes! The axe fell in the well!
+
+**Feeling**
+
+Well done! You have won the quiz!
+
+Press the start button and, Hey Presto, a copy comes out the other end!
+
