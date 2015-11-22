@@ -28,8 +28,8 @@ a. Examples of coordinating conjunctions
    i. The artist sketched the picture _and_ painted it.  
   ii. The lady searched the cupboard _but_ could not find her book.  
 
-Coordinating words:
-  and, but, for, still
+Coordinating words:  
+  and, but, for, still,  
   only, either..or, neither..nor
   
 b. Examples of subordinating conjunctions
