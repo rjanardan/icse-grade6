@@ -31,8 +31,8 @@
         min-height: 75px;
       }
 
-      .bg-primary { text-weight: bold }
-      .bg-success { text-weight: italics }
+      .question { font-weight: bold; }
+      .answer { font-style: italic; }
 
       #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
       #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
@@ -42,13 +42,15 @@
       var show = 1;
 
       $(document).ready(function() {
-         $(".bg-primary, .label-primary").click(function() {
+         $(".bg-primary, .label-primary, .question").click(function() {
             if (show++ % 2) {
               $('.bg-success').css('visibility','hidden');
               $('.label-info').css('visibility','hidden');
+              $('.answer').css('visibility','hidden');
             } else {
               $('.bg-success').css('visibility','visible');
               $('.label-info').css('visibility','visible');
+              $('.answer').css('visibility','visible');
             }
          })
       });
@@ -145,17 +147,17 @@
             child is my son or my daughter.
             </pre>
 
-            <p class=bg-primary>1. What was the author's mother responsible for?
-            <p class=bg-success>A. Nelson Mandela's mother was responsible for taking care of 3 houses and families. She was responsible for household chores, taking care of children and their needs.
+            <p class=question>1. What was the author's mother responsible for?
+            <p class=answer>A. Nelson Mandela's mother was responsible for taking care of 3 houses and families. She was responsible for household chores, taking care of children and their needs.
 
-            <p class=bg-primary>2. What is the reason that the author was never alone in his childhood?
-            <p class=bg-success>A. In the village where Nelson Mandela grew up, families used to stay together, eat together and played together. There were so many children of his uncle and aunts, that he never was alone.
+            <p class=question>2. What is the reason that the author was never alone in his childhood?
+            <p class=answer>A. In the village where Nelson Mandela grew up, families used to stay together, eat together and played together. There were so many children of his uncle and aunts, that he never was alone.
 
-            <p class=bg-primary>3. Describe family relationships in African culture.
-            <p class=bg-success>A. In African culture, they lived as joint family. Children of brothers and sisters were together. The sons and daughters of one's uncles and aunts are considered brothers and sisters, not cousins. Also, uncle and aunt are called father and mother.
+            <p class=question>3. Describe family relationships in African culture.
+            <p class=answer>A. In African culture, they lived as joint family. Children of brothers and sisters were together. The sons and daughters of one's uncles and aunts are considered brothers and sisters, not cousins. Also, uncle and aunt are called father and mother.
 
-            <p class=bg-primary>4. Compare relationships in the African culture with that of what you share within your own family.
-            <p class=bg-success>A. Compared to how Nelson Mandela grew up, it is different in my family. Me and my cousin stay in different houses, but near by. We meet occasionally and have fun going to restaurants together. We meet on birthdays and greet each other.
+            <p class=question>4. Compare relationships in the African culture with that of what you share within your own family.
+            <p class=answer>A. Compared to how Nelson Mandela grew up, it is different in my family. Me and my cousin stay in different houses, but near by. We meet occasionally and have fun going to restaurants together. We meet on birthdays and greet each other.
               
             <pre>
             Page 10:
@@ -163,14 +165,14 @@
             It was in the field that...in its various techniques.
             </pre>
 
-            <p class=bg-primary>1. What did the author learn in his childhood?
-            <p class=bg-success>A. Nelson Mandela lived in a village with near by fields. He learnt how to gather wild honey, fruits and edible roots. He learnt how to dring milk directly from udder of a cow. He also learnt how to catch fish and knock birds using slingshot.
+            <p class=question>1. What did the author learn in his childhood?
+            <p class=answer>A. Nelson Mandela lived in a village with near by fields. He learnt how to gather wild honey, fruits and edible roots. He learnt how to dring milk directly from udder of a cow. He also learnt how to catch fish and knock birds using slingshot.
 
-            <p class=bg-primary>2. What was considered as the essential skill for African boys?
-            <p class=bg-success>A. Nelson Mandela learnt various things like Of the many things Nelson Mandela learnt during early childhood. One thing that was essential knowledge was stick-fight. He became skilled in various techniques.
+            <p class=question>2. What was considered as the essential skill for African boys?
+            <p class=answer>A. Nelson Mandela learnt various things like Of the many things Nelson Mandela learnt during early childhood. One thing that was essential knowledge was stick-fight. He became skilled in various techniques.
 
-            <p class=bg-primary>3. Do you think the author had a happy childhood in spite of poverty? Give reasons for your answer.
-            <p class=bg-success>A. Yes, author had happy childhood. He had children around him always and huge open spaces to play. He had fun learning gathering of honey, catch fish and knock birds.
+            <p class=question>3. Do you think the author had a happy childhood in spite of poverty? Give reasons for your answer.
+            <p class=answer>A. Yes, author had happy childhood. He had children around him always and huge open spaces to play. He had fun learning gathering of honey, catch fish and knock birds.
           </div>
 
           <h3>Unit 7: There was an Indian (pg 37)</h3>
@@ -178,8 +180,8 @@
             <h4>Answers to Textbook Questions</h4>
             <h5>Answer the following questions in your own words.</h5>
             <!--
-            <p class=bg-primary>Where was Anne kneeling?</p>
-            <p class=bg-success>Ans: Anne was kneeling towards the window.</p>
+            <p class=question>Where was Anne kneeling?</p>
+            <p class=answer>Ans: Anne was kneeling towards the window.</p>
             -->
             <h4>Word Meanings</h4>
           </div><!-- There was an Indian -->
@@ -187,20 +189,20 @@
 
           <h3>Unit 8: Don Quixote Fights Some Giants</h3>
           <div>
-              <p class="bg-primary">1. Whom did Don Quixote choose as his squire? How did he persuade him to become his squire?
-              <p class="bg-success">A. Don Quixote chose Sancho Panza as his squire. Sancho Panza was a poor man. Don persuaded Sancho by promising many adventures. He also promised to make him governor of the islands they will conquer together.
+              <p class=question>1. Whom did Don Quixote choose as his squire? How did he persuade him to become his squire?
+              <p class=answer>A. Don Quixote chose Sancho Panza as his squire. Sancho Panza was a poor man. Don persuaded Sancho by promising many adventures. He also promised to make him governor of the islands they will conquer together.
 
-              <p class="bg-primary">2. What arrangements did Don Quixote adn his squire make for their adventures?
-              <p class="bg-success">A. Sancho has brought his donkey with him as he did not own a horse. Sancho brought leather-bottle with full of water and empty saddlebags to receive the things they would win in their contests.
+              <p class="question">2. What arrangements did Don Quixote adn his squire make for their adventures?
+              <p class="answer">A. Sancho has brought his donkey with him as he did not own a horse. Sancho brought leather-bottle with full of water and empty saddlebags to receive the things they would win in their contests.
 
-              <p class="bg-primary">3. Whom did Don Quixote mistake for giants? How did Sancho Panza try to correct his master?
-              <p class="bg-success">A. Don mistook windmills for giants. He said some of the giants had arms more than six miles long. Sancho tried to correct his master. They are not gaints but windmills. Arms are actually sails. But still Don thought they were gaints.
+              <p class="question">3. Whom did Don Quixote mistake for giants? How did Sancho Panza try to correct his master?
+              <p class="answer">A. Don mistook windmills for giants. He said some of the giants had arms more than six miles long. Sancho tried to correct his master. They are not gaints but windmills. Arms are actually sails. But still Don thought they were gaints.
 
-              <p class="bg-primary">4. What was the result of Don Quixote's fight with the 'giants'?
-              <p class="bg-success">A. Don attacked the nearest windmill, pushing his spear in to the sail. The sail rotated fast and broke the spear into many pieces. It threw Don and Rozinante down.
+              <p class="question">4. What was the result of Don Quixote's fight with the 'giants'?
+              <p class="answer">A. Don attacked the nearest windmill, pushing his spear in to the sail. The sail rotated fast and broke the spear into many pieces. It threw Don and Rozinante down.
 
-              <p class="bg-primary">5. How did he react to his defeat?
-              <p class="bg-success">A. Don said that in war one's fortune can change easily. He said some magician had turned giants into windmills so that he would not be able to conquer them. But still Don had hope to win.
+              <p class="question">5. How did he react to his defeat?
+              <p class="answer">A. Don said that in war one's fortune can change easily. He said some magician had turned giants into windmills so that he would not be able to conquer them. But still Don had hope to win.
           </div>
 
 
