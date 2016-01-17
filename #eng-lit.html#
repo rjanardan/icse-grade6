@@ -33,7 +33,6 @@
 
       .question { font-weight: bold; }
       .answer { font-style: italic; }
-      .head4 { font-weight: bold; font-size: 105%; }
 
       #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
       #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
@@ -137,15 +136,15 @@
           <h3>Unit 6: Home on the Veld</h3>
           <div>
             <pre>
-My mother was in charge of three rondavels at 
-Qunu which, as I remember, were always filled
-with the children of my relations. In fact, I 
-can hardly remember any occasion as a child 
-when I was alone. In African culture, the sons 
-and daughters of one's aunts and uncles are
-considered brothers and sisters, not cousins.
-My mother's sister is my mother and my brother's
-child is my son or my daughter.
+            My mother was in charge of three rondavels at 
+            Qunu which, as I remember, were always filled
+            with the children of my relations. In fact, I 
+            can hardly remember any occasion as a child 
+            when I was alone. In African culture, the sons 
+            and daughters of one's aunts and uncles are
+            considered brothers and sisters, not cousins.
+            My mother's sister is my mother and my brother's
+            child is my son or my daughter.
             </pre>
 
             <p class=question>1. What was the author's mother
@@ -181,9 +180,9 @@ child is my son or my daughter.
               together. We meet on birthdays and greet each other.
               
             <pre>
-Page 10:
+            Page 10:
 
-It was in the field that...in its various techniques.
+            It was in the field that...in its various techniques.
             </pre>
 
             <p class=question>1. What did the author learn in
@@ -263,79 +262,44 @@ It was in the field that...in its various techniques.
                 giants into windmills so that he would not be able
                 to conquer them. But still Don had hope to win.
 
-              <hr>
-                
-              <p class=head4>Read the lines given below and answer the questions
-                that follow with reference to context.</p>
+
+              <h4>Read the lines given below and answer the questions
+                that follow with reference to context.</h4>
 
               <p class=question>"Some  knights made their squires  wait for many
               years. I shall not be like that.  I may win a kingdom in six days'
-                time. I shall straightaway put you in charge of it."</p>
-              <ol>
-              <li class="question"> Why did Don Quixote make such a
-                promise to Sancho?</li>
-              <p  class="answer">Don  wanted  to  presuade Sancho  to  be  his
-                squire. Hence, he was assuring him early benefits.</p>
+                time. I shall straightaway put you in charge of it."
+                
+              <p class=question>a. Why did Don Quixote make such a
+                promise to Sancho?
+              <p  class=answer>Don  wanted  to  presuade Sancho  to  be  his
+                squire. Hence, he was assuring him early benefits.
                     
-              <li class="question">b. What did the  knight and his squire carry
-                with them as they went along?</li>
+              <p class=question>b. What did the  knight and his squire carry
+                with them as they went along?
               <p class=answer>They carried with  them leather-bottle full of
-                water and empty saddlebags to keep things they would win.</p>
+                water and empty saddlebags to keep things they would win.
                     
-              <li class="question">c. What did the knight and his assistant
-                encouter next?</li>
+              <p class=question>c. What did the knight and his assistant
+                encouter next?
               <p  class=answer>They encountered  huge  windmills, which  Don
-                  mistook as giants.</p>
-              </ol>      
+                  mistook as giants.
+                    
               <p class=question>2.  At that  moment, the  wind rose  and the
                 sails of the windmills began to move.
                 "Move your arms as much as  you like, you will not stop me!"
                 Don Quixote shouted when he saw this.
-                <ol>
-                  <li class=question>What did  Don Quixote  mistake windmills
-                for?</li>
-                  <p class=answer>Don mistook windmills for giants.</p>
+              <p class=question>a.  What did  Don Quixote  mistake windmills
+                for? 
+              <p class=answer>Don mistook windmills for giants.
                 
-                  <li class=question>Who tried to correct this mistake?</li>
-                  <p class=answer>Sancho tried to correct his master.</p>
+              <p class=question>b. Who tried to correct this mistake?
+              <p class=answer>Sancho tried to correct his master.
                     
-                  <li class=question>How did the knight fare in this encounter
-                    with the windmills?</li>
-                  <p  class=answer>Don fared  very badly.  In the  encounter his
-                     spear was broken and he was thrown on ground.</p>
-                </ol>
-                <hr>
-              <p class=head4>Revision questions</p>
-              <ol>
-                <li class=question>Do you think Don was intelligent knight?</li>
-                <p class=answer>No, Don is  stupid. He cannot make out
-                difference between giants and windmills.</p> 
-                
-                <li class=question>Do you think Sancho did right thing serving Don as master?</li>
-                <p class=answer>No,  Sancho  should not  have  served
-                  Don. Serving a fooling master is futile (waste).</p>
-                
-                <li class=question>Do you think Sancho did right thing joining Don
-                Quixote?</li>
-                <p class=answer>Sancho  was poor and did  not have any
-                other option. Still serving a foolish master is futile
-                  and sometimes dangerous.</p>
-
-                <li class=question>Do you think  Sancho was poor? Give
-                reasons.</li>
-                <p class=answer>Yes, Sancho was  poor. He did not have
-                a horse, but only donkey.  He joined Don with dream of
-                  becoming rich.</p>
-
-                <li  class=question>If you  were in  Sancho's place,
-                  would you go with Don?</li>
-                <p  class=answer>No, I  would  not go  with Don,  as
-                  serving  fooling master  is dangerous.  I learnt  it
-                  from panchatantra tales.</p>
-              </ol>
-              
-                
-                
+              <p class=question>c. How did the knight fare in this encounter
+                with the windmills?
+              <p  class=answer>Don fared  very badly. In the  encounter his
+                spear was broken and he was thrown on ground.
           </div>
 
 
