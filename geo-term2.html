@@ -4,13 +4,15 @@
     <title>Grade VI - Geography (Term 2)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+    
 
     <style>
       #sortable1, #sortable2 {
@@ -39,7 +41,6 @@
       .meaning {font-style: italic; }
       .head4 { font-weight: bold; font-size: 105%; }
       .keyword {}
-
       #draggable { width: 100px; height: 100px; padding: 0.5em; 
                    float: left; margin: 10px 10px 10px 0; }
       #droppable { width: 150px; height: 150px; padding: 0.5em; 
@@ -56,29 +57,38 @@
       var show = 1;
       var keywords_show = 1;
 
+      function show_hide_keywords() {
+        if (keywords_show++ % 2) {
+          $('.keyword').css('visibility', 'hidden');
+        } else {
+          $('.keyword').css('visibility','visible');
+        }
+      }
+
+      function show_hide_answers() {
+        if (show++ % 2) {
+          $('.bg-success').css('visibility','hidden');
+          $('.label-info').css('visibility','hidden');
+          $('.answer').css('visibility','hidden');
+        } else {
+          $('.bg-success').css('visibility','visible');
+          $('.label-info').css('visibility','visible');
+          $('.answer').css('visibility','visible');
+        }
+      }
+      
       $(document).ready(function() {
-         $(".bg-primary, .label-primary, .question").click(function() {
-            if (show++ % 2) {
-              $('.bg-success').css('visibility','hidden');
-              $('.label-info').css('visibility','hidden');
-              $('.answer').css('visibility','hidden');
-            } else {
-              $('.bg-success').css('visibility','visible');
-              $('.label-info').css('visibility','visible');
-              $('.answer').css('visibility','visible');
-            }
-         })
-         $(".keyword").click(function() {
-            if (keywords_show++ % 2) {
-               $('.keyword').css('visibility', 'hidden');
-            } else {
-               alert('visible');
-               $('.keyword').css('visibility','visible');
-            }
-         });
+        $(".bg-primary, .label-primary, .question").click(show_hide_answers);
+        $(".keyword").click(show_hide_keywords);
+        $(document).keydown(function (e) {
+          if (e.keyCode == 75) {
+            show_hide_keywords();
+          } 
+          if (e.keyCode == 65) {
+            show_hide_answers();
+          }
+        });
       });
-
-
 
       $(function() {
         $( "#sortable1, #sortable2" ).sortable({
@@ -131,7 +141,7 @@
        });
     </script>
   </head>
-  <body>
+  <body id=mypage>
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -166,30 +176,125 @@
       </ul>
       <div id="australia1">
         <h3>Chapter 1. Australia - Climate, Natural Vegetation and Wildlife</h3>
-        <div style="margin-bottom: 10em;"><!-- From Home Notes -->
-          <ol>
-            <li>FACTORS AFFECTING THE CLIMATE OF AUSTRALIA</br></br>
-              <p class=question>What are the factors that affect climate of Australia?
+        <div><!-- From Home Notes -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">1.1 Factors Affecting the Climate of Australia</div>
+            <div class="panel-body">
+              <p class=question style="font-weight:bold;">1. What are the factors that affect climate of Australia?
                 <div class=answer>
-              <p>Factors that affect climate of Australia are Location, Distance from the Oceans, winds and direction of mountain ranges.</br>
-                <ol>
-                  <li><b>Location</b>: Australia is located in the <span class=keyword>Southern Hemisphere</span>, and seasons are opposite of seasons in India. Upper part of Australia which is above <span class=keyword>Tropic of Capricorn</span>, lies in the tropical zone and has high temperature through out the year. Lower part of Australia, which is below Tropic of Capricorn, is in the temperate zone which has hot summer and cool winter.
-                  <li><b>Distance from the Oceans</b>Australia is surrounded by seas all sides. Nearness of the ocean affects the climate. The coastal areas are cooler and wetter than the inland areas. Central parts of the continent experience extreme climate. They have high temperature in summer and low temperature in winter.
-                  <li><b>Winds</b>: Winds that blow from the sea often bring rain to the coast. They cause dry weather to the inland areas. Dry wind blowing interior parts of continent and deserts are formed.
-                  <li><b>Direction of Mountain Ranges</b>: The <span class=keyword>Great Dividing Range</span> runs parallel to the eastern coast. It acts as barrier to the winds blowing from south-east. Due to this, south-east has lot of rain. Due to this there is less rain in Western Plateau region. It is the rain shadow area of GDR.
-                </ol>
-                <div align=center style="margin:2em;">
-                  <img height=80% width=80% src="img/aus-climatezones-kids.jpg" alt="Australia climate for kids" style="margin: 1em">
-                  <img src="img/aus-climate-kids.png" alt="Australia climate with notes" style="margin: 1em">
+                  <p>Factors that affect climate of Australia are Location, Distance from the Oceans, winds and direction of mountain ranges.</br>
+                    <ol>
+                      <li><b>Location</b>: Australia is located in the <span class=keyword>Southern Hemisphere</span>, and seasons are opposite of seasons in India. It is Summer in December and winter in July. Upper part of Australia which is above <span class=keyword>Tropic of Capricorn</span>, lies in the tropical zone and has high temperature through out the year. Lower part of Australia, which is below Tropic of Capricorn, is in the temperate zone which has hot summer and cool winter.
+                      <li><b>Distance from the Oceans</b>: Australia is surrounded by seas all sides. Nearness of the ocean affects the climate. The coastal areas are cooler and wetter than the inland areas. Central parts of the continent experience extreme climate. They have high temperature in summer and low temperature in winter.
+                      <li><b>Winds</b>: Winds that blow from the sea often bring rain to the coast. They cause dry weather to the inland areas. Dry wind blowing in interior parts of continent and deserts have formed.
+                      <li><b>Direction of Mountain Ranges</b>: The <span class=keyword>Great Dividing Range</span> runs parallel to the eastern coast. It acts as barrier to the winds blowing from south-east. Due to this, south-east has lot of rain. Due to this there is less rain in Western Plateau region. It is the rain shadow area of GDR.
+                    </ol>
+                    <div align=center>
+                      <img class=img-responsive src="img/aus-climatezones-kids.jpg" alt="Australia climate for kids">
+                      <img class=img-responsive src="img/aus-climate-kids.png" alt="Australia climate with notes">
+                    </div><!-- images -->
+                </div><!-- answer -->
+            </div><!-- panel-body -->
+          </div><!-- panel-primary-->
+        </div><!-- home notes -->
+
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            1.2 Climatic Features Of Australia
+          </div>
+          <div class="panel-body">
+            <p class=question>1. List seasons and months
+              <ul>
+                <li>Summer: December to February
+                <li>Autumn: March to May
+                <li>Winter: June to August
+                <li>Spring: September to November
+              </ul>
+            <p class=question>2. Describe climate of Australia
+              <table class="table-bordered table table-responsive">
+                <tr>
+                  <th>Zone</th><th>Climate type</th><th>Description</th>
+                </tr>
+                <tr>
+                  <td>Northern part</td>
+                  <td>Tropical zone</td>
+                  <td>High temperature through out the year.</td>
+                </tr>
+                <tr>
+                  <td>Southern part</td>
+                  <td>Temperate zone</td>
+                  <td>Warm summer, cool winter. Greater difference in temperature.</td>
+                </tr>
+              </table>
+              <h4>What are the different types of climate in Australia</h4>
+              <ol>
+                <li>Tropical monsoon type climate
+                <li>Savanna type climate
+                <li>Desert type climate
+                <li>Mediterranean type climate
+                <li>Temperate type climate
+                <li>China type climate
+              </ol>
+          </div><!-- panel-body-->
+        </div><!-- panel for 1.2 -->
+        
+          <h4 style="font-weight:bold">1.3 Climatic Regions In Relation With Natural Vegetation And Wild Life</h4>
+                <h4>Climate and description</h4>
+                <table class="table-bordered table table-responsive">
+                  <tr><th>Climate</th><th>Where?</th><th>Summer</th><th>Winter</th><th>Vegetation</th><th>Wildlife</th></tr>
+                  <tr><td>Tropical monsoon</td><td>Northern most part of northern territory. Cape York region of Queensland</td><td>Hot and heavy rainfall</td><td>Cold and dry</td><td>Bamboo, palm, eucalyptus, cedar, birch</td><td>Marsupials - Kangaroo, koala, possum, Tasmanian devil, Lyrebird.</td></tr>
+                  <tr><td>Savanna</td><td>central northern territory and south west parts of Queensland</td><td>Hot and moderate rainfall</td><td>Cold and dry</td><td>known as Parkland vegetation. eucalyptus.</td><td>lizards, snakes, crocodiles. snakes, tiger, copperhead</td></tr>
+                  <tr><td>Desert</td><td>Western plateau - great sandy desert and Great Victoria Deserts.</td><td>Hot and dry</td><td>Cold and dry; Summers are hottest.</td><td>bushes, thorny shrubs, spiniflex, acacia.</td><td>monotremes, placental types of mammals. duck-bill platypus, echidna, Australian Dingo.</td></tr>
+                  <tr><td>Mediterranean</td><td>south-east and south-west coasts</td><td>Hot and dry</td><td>Cold and moderate rainfall</td><td>pine, beech, kauri, jarrah, mallee bushes.</td><td>Kookaburras, black swans, cassowarys, bower birds, spoonbills</td></tr>
+                  <tr><td>Temperate</td><td>Eastern parts of New South wales, Victoria, Tasmania. Found in Murray-Darling basin</td><td>Moderate warm and wet</td><td>Cold and dry</td><td>Temperate grasslands are known as Downs. Consists of short grasses. Temperate forests consists of deciduous forests, pine, beech. </td><td>worm lizard, striped legless lizard.</td></tr>
+                  <tr><td>China type</td><td>South-east coast of Queensland and New South Wales</td><td>Hot and heavy rain</td><td>Mild and dry</td><td>eucalyptus and coniferous trees. </td><td>fish, shell, coral reef. Dangerous sea wildlife Great White Pointer shark, the Box Jellyfish and Blue-Ringed Octopus</td></tr>
+                </table>
+                <h4 style="font-weight:bold">1.4 The Great Barrier Reef</h4>
+                <div class="panel panel-default">
+                  <div class="panel-body">Read from TopperLearning.com</div>
                 </div>
-                </div>
-            <li>CLIMATIC FEATURES OF AUSTRALIA
-            <li>CLIMATIC REGIONS IN RELATION WITH NATURAL VEGETATION AND WILD LIFE
-            <li>THE GREAT BARRIER REEF
-          </ol>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    Essay type question and answers
+                  </div>
+                  <div class="panel-body">
+                    <p class=question>Q. Give four characteristic features of temperate grasslands.</br>
+                      <div class=answer>
+                    <p>Ans. Four characteristic features of temperate grasslands are:</br>
+                    <ul>
+                      <li>Known as "Downs" in Australia, much of the temperate grasslands lie in the Murray-Darling Basin.
+                      <li>Summers are hot while the winters are cold.
+                      <li>The region receives average rainfall.
+                      <li>The temperate grasslands consist of short grass. Towards the west where the rainfall begins to decrease, the grasslands get replaced by scrub and bushes.
+                    </ul></div>
+                    <p class=question>Q. What type of climate prevails in the Western Plateau? Give two characteristic features of this type of climate.
+                      <div class=answer>
+                    <p>The tropical desert covers a major portion of the Western Plateau and hence this region has a tropical desert type of climate. Two main characteristics of this type of climate are:</br>
+                    <p>Summers and extremely hot and winters extremely cold. There is also wide difference between the daily ranges of temperature.</br>
+                      This region receives less than 25 cm of rainfall annually.</br>
+                      </div>
+                      <p class=question>Q. In what ways do the following factors affect the climate of Australia?
+                      <ul><li>Latitude
+                        <li>Direction of mountain ranges</ul></p>
+                      <div class=answer>
+                    <p>Ans. Latitude: The Tropic of Capricorn passes through the nearly the centre of Australia and hence the country falls under the influence of the trade winds.</br>
+                    <p>Direction of mountain ranges: When moisture bearing trade winds strike the Eastern Highlands (running along the eastern coast), it rains on the eastern coast which lies on the windward side of the Eastern Highlands while the leeward side hardly receives any rainfall.</br>
+                      </div>
+                    <p class=question>Q. What is the most important river system of Australia? Name any four features of this river system.
+                    <p class=answer>The most important river system of Australia is the Murray- Darling Basin.</br>
+                      Four features of this river system are:</br>
+                      The Murray is the main river of Australia while Darling is its tributary.</br>
+                      This river system lies to the east of the Central Lowlands.</br>
+                      Since the river Murray originates in the Australian Alps, it is a snow fed river and thus has sufficient water.</br>
+                      The river Darling does not have much water and becomes dry during droughts. During excessive rains, it tends to change its course.</br></p>
+                    <p class=question>Q. Write a short note on the availability of water in Australia.
+                    <p class=answer>Australia is an island continent with limited water resources. Rainfall in the region is uneven, unreliable and low. Only about one eighth of the total rainwater flows on the surface while the rest is evaporated as most parts of Australia are desert like.</br>
+                      The Murray-Darling river basin is the largest river basin in Australia. More than half of the water of this basin is used for irrigation and power generation.</br>
+                      Australia has large quantities of underground water resources. It gets much of the underground water from the artesian basin.</br></p>
+                  </div>
         </div><!-- End of Home Notes -->
         
-        <div> <!-- from learnnext.com -->
+        <div style="display: none;"> <!-- from learnnext.com -->
           <h4>LearnNext.com</h4>
           <p class=question>1. What are the three main physical features of Australia?</p>
           <div class=answer>
@@ -214,6 +319,7 @@
 
             A peculiar feature of Australia is the <b class=keyword>Great Barrier Reef</b> which lies off the north-east coast. It lies at a distance of <b class=keyword>30 to 205 km</b> from the coast. The reef is formed by the skeletal remains of small marine organisms called <i>coral polyps</i>.It is called as the Great Barrier Reef because it acts as a barrier for movement of ships towards the coast. </p>
           </div><!-- question 1 -->
+
           <p class=question>2. Details about climate, rainfall, vegetation and wildlife of Australia</p>
           <div id=answer>
             The seasons of Australia are reversed compared to what we experience  in India because it lies in the Southern Hemisphere. The summer season is from December to February and winter season is from June to August.
@@ -243,12 +349,14 @@ The hot desert region has patches of thorny scrub and bush vegetation. Acacia or
             Wallaby, Dingo Platypus, the Spiny ant eater, Emu, Kooka-burra  and lyrebird are other animals found in Australia. Australia has 200 varieties of animals of the Marsupial family and 500 varieties of birds. It has distinct animals which are not found in other continents.            
           </div><!-- question 2 -->
         </div>
-      </div>
+    </div>
+
+    
       <div id=australia2>
         <h3>2. Australia- People, Resources and their utilization</h3>
         <div>
           <h3>Australia: Economic Features</h3>
-          <div class=answer>
+          <div style="display: none;">
             <p>In 1770, James cook the captain of English expedition found that Australia was good for inhabitation. Later people started settling in Australia.Though this country is sparsely populated it is a well developed country.</p>
 
             <p>Australia is one of the economically developed countries of the world. The people here are mainly employed in industries,  trade, transport, education, communication etc and some of them also  do farming and agriculture.</p>
@@ -273,7 +381,10 @@ The main wheat growing regions of Australia are the Downs plains and Western Sou
             <p>Australia is also a leading industrial country in the Southern hemisphere. It exports iron ore to Japan. The gold mines of Australia are located in Gimpi, Murchisan, Kargooli and Coolgardie. Australia also has Bauxite, Natural oil and Natural gas.</p>
           </div>
           <h3>Australia: Industry, Transportation and Population</h3>
-          <div class=answer>
+          <div>
+            
+          </div>
+          <div style="display: none;">
             <b>Industries</b>
             <p>Australia is an important industrial nation of the Southern Hemisphere. Industries employ more people than agriculture or pastoral farming.The important industries in Australia are cotton and woolen textile industry, sugar industry, slaughtering of animals and processing of beef and mutton , manufacture of dairy products.</p>
 
@@ -320,8 +431,8 @@ The main wheat growing regions of Australia are the Downs plains and Western Sou
     </div> <!-- tabs -->
     <div>
       <p>Click on question to show/hide answers. </p>
-      <button type=button class=btn btn-primary id=btn-answers>Show/Hide answers</button>
-      <button type=button class=btn btn-success id=btn-keywords>Show/Hide keywords</button>      
+      <button type=button class=btn btn-primary id=btn-answers onClick="show_hide_answers();">Show/Hide answers</button>
+      <button type=button class=btn btn-success id=btn-keywords onClick="show_hide_keywords();">Show/Hide keywords</button>      
     </div> <!-- footnote -->
   </div> <!-- container -->
   </body>
