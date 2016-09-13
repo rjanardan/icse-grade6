@@ -82,10 +82,12 @@
       });
 
       $(function() {
-        $("#tabs").tabs();
+      $("#tabs").tabs();
+        $("#grammar-tabs").tabs();      
         $("#letter-tabs").tabs();
         $("#essay-tabs").tabs();
-        $("#grammar-tabs").tabs();
+        $("#vocabulary-tabs").tabs();
+        $("exam-notes-tabs").tabs();
       });
 
       $(document).ready(function() {
@@ -123,105 +125,7 @@
         <ul>
           <li><a href="#grammar">Grammar</a></li>
           <li><a href="#letter">Letter Writing</a></li>
-          <li><a href="#essay">Essay Writing</a></li>
-          <li><a href="#vocabulary">Vocabulary</a></li>
-          <li><a href="#exam-notes">Exam Notes</a></li>
         </ul>
-
-        <div id="letter">
-          <div id="letter-tabs">
-            <ul>
-              <li><a href="#letter-tab-1">Letter of Request (informal)</a></li>
-              <li><a href="#letter-tab-2">Letter of Enquiry</a></li>
-              <li><a href="#letter-tab-3">Formal letter to Principal and teacher</a></li>
-              <li><a href="#letter-tab-4">Match letters</a></li>
-            </ul>
-
-            <div id="letter-tab-1">
-              <form>
-                <textarea cols="20" rows="5" placeholder="address">
-A6, Green Meadows,
-Harlur Road, 
-Bangalore
-                </textarea></br></br>
-                <input type="text" size=19 value="January 26, 2016"></br></br>
-                <input type="text" value="Dear Vasanth,"></br></br>
-                <textarea cols=60 rows=20>
-You will be surprised to receive my letter, as we have not been in touch for a long time. For my school project on "Historical places", I am coming to Bellary. I will be there for 5 days. I want a favour from you. I want you to accompany me to Hampi as site seeing tour, where I need your expert guidance on the historical importance. I remember you always telling me stories of Vijayanagara empire. 
-
-    Please treat this as personal request. My project is for the cause of keeping our culture alive and for my generation to learn from it. I hope you would join me in this cause. I will be there between March 15 to March 20.  Please let me know if it is convenient to you.
-
-    Looking forward for your response. Feel free to contact me on mobile.
-
-                </textarea></br>
-
-                <input type="text" size=30 value="Yours lovingly,"></br></br>
-                <input type="text" size=10 value="Anshul"></br></br>
-              </form>
-            </div>
-
-            <div id="letter-tab-2">
-              <h4>Write a letter to your friend in Pune describing about the birthday celebration you had with your friends.</h4></br>
-              <textarea cols=60 rows=30 placeholder="Letter to a friend"></textarea>
-            </div>
-            <div id="letter-tab-3">
-              <h4>Write a letter to your friend in Pune describing about the birthday celebration you had with your friends.</h4></br>
-              <textarea cols=60 rows=30 placeholder="Letter to a friend"></textarea>
-            </div>
-            <div id="letter-tab-4">
-              <div class=container>
-                <h4>Match the type of letter with content (examples)</h4>
-                <ul id="sortable1" class="connectedSortable">
-                  <li class="ui-state-default">Informal Letter</li>
-                  <li class="ui-state-default">Narrative Letter</li>
-                  <li class="ui-state-default">Apology Letter</li>
-                  <li class="ui-state-default">Congratulating Letter</li>
-                  <li class="ui-state-default">Sympathy Letter</li>
-                  <li class="ui-state-default">Thanking Letter</li>
-                  <li class="ui-state-default">Descriptive Letter</li>
-                </ul>
-
-                <ul id="sortable2" class="connectedSortable">
-                  <li class="ui-state-highlight">I am sorry that I was not able to come for your birthday.</li>
-                  <li class="ui-state-highlight">Letter to friend, grandpa, cousin, aunt.</li>
-                  <li class="ui-state-highlight">I would like to thank you for the wonderful gift.</li>
-                  <li class="ui-state-highlight">It was a very scary night and it was raining, while I was returning home.</li>
-                  <li class="ui-state-highlight">I am very glad to hear that you have won the competition.</li>
-                  <li class="ui-state-highlight">When I was going to railway station, I witnessed a car accident.</li>
-                  <li class="ui-state-highlight">I heard about the sad demise of your grandfather. It was terrible news for me.</li>
-                </ul>
-              </div> <!-- container -->
-            </div> <!-- letter-tab-9 -->
-          </div> <!-- letter tabs -->
-        </div> <!-- letter -->
-
-        <div id="essay">
-          <div id="essay-tabs">
-            <ul>
-              <li><a href="#essay-tab-1">Essay 1</a></li>
-              <li><a href="#essay-tab-2">Essay 2</a></li>
-              <li><a href="#essay-tab-3">Essay 3</a></li>
-              <li><a href="#essay-tab-4">Essay 4</a></li>
-              <li><a href="#essay-tab-5">Essay 5</a></li>
-              <li><a href="#essay-tab-6">Essay 6</a></li>
-            </ul>
-            <div id="essay-tab-1">
-              <h4>Describe an early morning walk in the park in winter. Give details of the smells, sights, sounds and feelings you experienced. Total length should be 200 words.</h4>
-              <textarea rows="20" cols="80" id="essay_tab_1" placeholder=""></textarea></br>
-              <p class="label label-info">Words: <span id=word_count>0</span></p>
-            </div>
-            <div id="essay-tab-2">
-            </div>
-            <div id="essay-tab-3">
-            </div>
-            <div id="essay-tab-4">
-            </div>
-            <div id="essay-tab-5">
-            </div>
-            <div id="essay-tab-6">
-            </div>
-          </div> <!-- essay-tabs -->
-        </div> <!-- essay -->
 
         <div id="grammar">
           <div id="grammar-tabs">
@@ -319,46 +223,41 @@ You will be surprised to receive my letter, as we have not been in touch for a l
 
 
             <div id="grammar-tab-4">
-              <pre>
-              Joy
-              Wow! What a car!
-              Hurray! We won the match!
+              <div class=container>
+                Joy
+                Wow! What a car!
+                Hurray! We won the match!
 
-              Grief
-              Alas! We could have won the match!
-              Oh dear! Why are you not eating?
+                Grief
+                Alas! We could have won the match!
+                Oh dear! Why are you not eating?
 
-              Disgust
-              Yuck! What a bad odour!
-              Yikes! The axe fell in the well!
+                Disgust
+                Yuck! What a bad odour!
+                Yikes! The axe fell in the well!
 
-              Feeling
+                Feeling
 
-              Well done! You have won the quiz!
-              Press the start button and, Hey Presto, a copy comes out the other end!
-              </pre>
-
+                Well done! You have won the quiz!
+                Press the start button and, Hey Presto, a copy comes out the other end!
+              </div>
             </div>
           </div> <!-- grammar-tabs -->
         </div> <!-- grammar -->
 
+        <div id="letter">
+          <div id="letter-tabs">
+            <ul>
+              <li><a href="#letter-tab-0">Hello</a></li>
+              <li><a href="#letter-tab-1">Letter of Request (informal)</a></li>
+              <li><a href="#letter-tab-2">Letter of Enquiry</a></li>
+            </ul>
 
+            <div id="letter-tab-1">
+            </div>
+          </div> <!-- letter tabs -->
+        </div> <!-- letter -->
 
-        <div id="vocabulary">
-          <p>Vocabulary goes here </p>
-        </div> <!-- vocabulary -->
-
-        <div id="exam-notes">
-          <dl>
-            <dt>Prepositions</dt>
-            <dd>
-              Example: on, at, in, under, till, since.
-              A preposition is a word that links a noun, pronoun or noun phrase to some other part of the sentance.
-
-            </dd>
-            <dt></dt><dd></dd>
-          </dl>
-        </div> <!-- exam notes-->
       </div> <!-- tabs -->
 
     </div> <!-- container -->
